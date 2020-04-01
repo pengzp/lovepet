@@ -1,7 +1,10 @@
 package com.pet.lovepet.entity;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.util.Date;
 
+@TableName("t_user")
 public class User {
     /**
      *
