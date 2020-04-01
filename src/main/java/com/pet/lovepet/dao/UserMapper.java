@@ -2,6 +2,7 @@ package com.pet.lovepet.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.pet.lovepet.entity.User;
+import org.springframework.stereotype.Repository;
 
 public interface UserMapper extends BaseMapper<User> {
     /**
