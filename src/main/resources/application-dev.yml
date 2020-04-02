@@ -9,8 +9,8 @@ spring:
 
 
 # Mybatis-plus
-#mybatis-plus:
-#  mapper-locations: classpath*:mapper/*.xml
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
 
 
 

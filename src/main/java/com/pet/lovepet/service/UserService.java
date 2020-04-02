@@ -1,7 +1,7 @@
 package com.pet.lovepet.service;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.pet.lovepet.dao.UserMapper;
+import com.pet.lovepet.dao.mapper.UserMapper;
 import com.pet.lovepet.entity.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
