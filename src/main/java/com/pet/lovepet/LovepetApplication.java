@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@MapperScan(basePackages = "com.pet.lovepet.dao.mapper")
 public class LovepetApplication {
 
     public static void main(String[] args) {
