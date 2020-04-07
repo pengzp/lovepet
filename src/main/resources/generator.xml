@@ -36,13 +36,13 @@
         </sqlMapGenerator>
 
         <javaClientGenerator type="XMLMAPPER"
-                             targetPackage="com.pet.lovepet.dao"
+                             targetPackage="com.pet.lovepet.dao.mapper"
                              targetProject=".\src\main\java">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 
 
-        <table  tableName="t_role" domainObjectName="Role"
+        <!--<table  tableName="t_role" domainObjectName="Role"
                 enableCountByExample="false" enableUpdateByExample="false"
                         enableDeleteByExample="false" enableSelectByExample="false"
                         selectByExampleQueryId="false">
@@ -51,7 +51,21 @@
                 enableCountByExample="false" enableUpdateByExample="false"
                 enableDeleteByExample="false" enableSelectByExample="false"
                 selectByExampleQueryId="false">
+        </table>-->
+        <table  tableName="t_user_role" domainObjectName="UserRole"
+                enableCountByExample="false" enableUpdateByExample="false"
+                enableDeleteByExample="false" enableSelectByExample="false"
+                selectByExampleQueryId="false">
         </table>
-
+        <table  tableName="t_permission" domainObjectName="Permission"
+                enableCountByExample="false" enableUpdateByExample="false"
+                enableDeleteByExample="false" enableSelectByExample="false"
+                selectByExampleQueryId="false">
+        </table>
+        <table  tableName="t_role_permission" domainObjectName="RolePermission"
+                enableCountByExample="false" enableUpdateByExample="false"
+                enableDeleteByExample="false" enableSelectByExample="false"
+                selectByExampleQueryId="false">
+        </table>
     </context>
 </generatorConfiguration>
