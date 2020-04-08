@@ -14,13 +14,15 @@
     <result column="status" jdbcType="INTEGER" property="status" />
     <result column="type" jdbcType="INTEGER" property="type" />
     <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="login_name" jdbcType="VARCHAR" property="loginName" />
     <result column="salt" jdbcType="VARCHAR" property="salt" />
     <result column="lockDate" jdbcType="VARCHAR" property="lockDate" />
     <result column="locked" jdbcType="VARCHAR" property="locked" />
 
   </resultMap>
   <sql id="Base_Column_List">
-    id,create_time,update_time,delete_flag
+    id,create_time,update_time,delete_flag,description,email,mobile,password,sex,
+    status,type,username,salt,lockDate,locked
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     <!--
