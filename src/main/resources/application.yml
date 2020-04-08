@@ -7,6 +7,8 @@ swagger:
   title: pet API接口文档
   description: pet Api Documentation
   version: 1.0.0
+  contact:
+    name: pet
 
 # Mybatis-plus
 mybatis-plus:
