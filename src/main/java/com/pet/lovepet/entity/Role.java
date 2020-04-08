@@ -1,6 +1,7 @@
 package com.pet.lovepet.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.pet.lovepet.base.BaseEntity;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -8,26 +9,19 @@ import java.util.Date;
 
 @Data
 @TableName("t_role")
-public class Role implements Serializable {
+public class Role extends BaseEntity implements Serializable {
 
-    private String id;
-
-    private String createBy;
-
-    private Date createTime;
-
-    private Integer delFlag;
-
-    private String updateBy;
-
-    private Date updateTime;
-
-    private Integer dataType;
-
-    private Boolean defaultRole;
-
+    /**
+     * 角色代码
+     */
+    private String code;
+    /**
+     * 角色描述
+     */
     private String description;
-
+    /**
+     * 角色名称
+     */
     private String name;
 
 
