@@ -14,20 +14,20 @@
 
         <jdbcConnection
                 driverClass="com.mysql.jdbc.Driver"
-                connectionURL="jdbc:mysql://127.0.0.1:3306/xboot"
+                connectionURL="jdbc:mysql://47.103.130.165:3306/pet-dev"
                 userId="root"
-                password="root"/>
+                password="192939Aa"/>
 
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <javaModelGenerator
+        <!--<javaModelGenerator
                 targetPackage="com.pet.lovepet.entity"
                 targetProject=".\src\main\java">
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="true"/>
-        </javaModelGenerator>
+        </javaModelGenerator>-->
 
         <sqlMapGenerator
                 targetPackage="mapper"
@@ -35,14 +35,14 @@
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator type="XMLMAPPER"
+        <!--<javaClientGenerator type="XMLMAPPER"
                              targetPackage="com.pet.lovepet.dao.mapper"
                              targetProject=".\src\main\java">
             <property name="enableSubPackages" value="false"/>
-        </javaClientGenerator>
+        </javaClientGenerator>-->
 
 
-        <!--<table  tableName="t_role" domainObjectName="Role"
+        <table  tableName="t_role" domainObjectName="Role"
                 enableCountByExample="false" enableUpdateByExample="false"
                         enableDeleteByExample="false" enableSelectByExample="false"
                         selectByExampleQueryId="false">
@@ -51,13 +51,13 @@
                 enableCountByExample="false" enableUpdateByExample="false"
                 enableDeleteByExample="false" enableSelectByExample="false"
                 selectByExampleQueryId="false">
-        </table>-->
+        </table>
         <table  tableName="t_user_role" domainObjectName="UserRole"
                 enableCountByExample="false" enableUpdateByExample="false"
                 enableDeleteByExample="false" enableSelectByExample="false"
                 selectByExampleQueryId="false">
         </table>
-        <table  tableName="t_permission" domainObjectName="Permission"
+        <!--<table  tableName="t_permission" domainObjectName="Permission"
                 enableCountByExample="false" enableUpdateByExample="false"
                 enableDeleteByExample="false" enableSelectByExample="false"
                 selectByExampleQueryId="false">
@@ -66,6 +66,6 @@
                 enableCountByExample="false" enableUpdateByExample="false"
                 enableDeleteByExample="false" enableSelectByExample="false"
                 selectByExampleQueryId="false">
-        </table>
+        </table>-->
     </context>
 </generatorConfiguration>
