@@ -60,6 +60,12 @@ public class User extends BaseEntity implements Serializable {
      */
     @ApiModelProperty(value = "盐值")
     private String salt;
+
+    /**
+     * 失败次数
+     */
+    @ApiModelProperty(value = "失败次数")
+    private int failTimes;
     /**
      * 被锁日期
      */

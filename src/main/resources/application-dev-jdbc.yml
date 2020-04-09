@@ -8,4 +8,12 @@ spring:
     password: 192939Aa
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    logSlowSql: true
+    initialSize: 10
+    maxActive: 80
+    maxWait: 60000
+    minEvictableIdleTimeMillis: 300000
+    minIdle: 10
+    timeBetweenEvictionRunsMillis: 60000
+    validationQuery: select count(*) from systables
+    #logSlowSql: true
+

@@ -174,4 +174,22 @@
       name = #{name,jdbcType=VARCHAR}
     where id = #{id,jdbcType=VARCHAR}
   </update>
+
+  <select id="getAll" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM
+    t_xubao_role
+    WHERE DELETE_FLAG = 0
+    <if test="userId != null">
+      and ID IN ( SELECT ROLE_ID FROM t_xubao_user_role WHERE USER_ID = #{userId} )
+    </if>
+    <if test="name != null">
+      and NAME = #{name}
+    </if>
+    <if test="code != null">
+      and CODE = #{code}
+    </if>
+  </select>
+
 </mapper>

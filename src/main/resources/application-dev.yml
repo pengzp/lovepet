@@ -2,6 +2,9 @@ server:
   port: 8848
   servlet:
     context-path: /
+  title: 宠爱后台管理系统
+  logo: petLove
+
 spring:
   profiles:
     include:

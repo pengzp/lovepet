@@ -30,7 +30,7 @@ public class BaseEntity {
      */
     @ApiModelProperty(value = "创建时间")
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private Date createdTime;
+    private Date createTime;
 
     /**
      * 是否有效
@@ -42,7 +42,7 @@ public class BaseEntity {
      * 更新时间
      */
     @ApiModelProperty(value = "更新时间")
-    @TableField(value = "UPDATED_TIME",update = "SYSDATE")
+    @TableField(value = "UPDATE_TIME",update = "SYSDATE")
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private Date updatedTime;
+    private Date updateTime;
 }
